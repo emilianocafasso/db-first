@@ -2,14 +2,16 @@
 Table: Cars
 Entity Name: Car
 
-id:
-brand:
-model:
-color:
-cylinders:
-displacement (cc):
-horsepower:
-transmission:
-available:
-km:
-price:
+id: BIGINT UNSIGNED PRIMARY_KEY AUTO_INCREMENT
+brand: VARCHAR(20) NOT_NULL
+model: VARCHAR(20) NOT_NULL
+color: VARCHAR(20) 
+plate: VARCHAR(10) UNIQUE 
+cylinders: TINYINT UNSIGNED 
+displacement (cc): SMALLINT UNSIGNED
+horsepower: SMALLINT UNSIGNED
+transmission: VARCHAR(10) NOT_NULL
+fuel_type: VARCHAR(10) NOT_NULL 
+available: TINYINT NOT_NULL
+km: INT UNSIGNED NOT_NULL
+price: INT FLOAT(8,2) UNSIGNED NOT_NULL
